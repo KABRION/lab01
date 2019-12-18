@@ -138,12 +138,12 @@ void StudentGroup::checkGroups()
 void StudentGroup::printGroup()
 {
 
-	
+
 	std::cout << "Group #" << getGroupID() << " - " << getGroupName() << "[" << getStudentsQty() << "] \n";
-	
-	std::cout 
+
+	std::cout
 		<< std::setw(5) << std::left << "ID"
-		<<  std::setw(15) <<  "First Name"
+		<< std::setw(15) << "First Name"
 		<< std::setw(15) << "Second Name"
 		<< std::setw(15) << "Patronymic"
 		<< std::setw(8) << "Course"
@@ -152,22 +152,22 @@ void StudentGroup::printGroup()
 		<< std::endl;
 
 	for (auto& i : students)
-	{	
-	
+	{
+
 		{
-			std::cout 
+			std::cout
 				<< std::setw(5) << i->getId()
 				<< std::setw(15) << std::left << i->getFirstName()
 				<< std::setw(15) << i->getSecondName()
 				<< std::setw(15) << i->getParentName()
 				<< std::setw(8) << i->getStudentCourse()
 				<< std::setw(5) << i->getStudentAge()
-				<< std::setw(8) << i->getStudentRating()				
+				<< std::setw(8) << i->getStudentRating()
 				<< std::endl;
 		}
-	
-	
+
+
 	}
 
-	std::cout <<"_______________________________________________________________________ \n \n";
+	std::cout << "_______________________________________________________________________ \n \n";
 }

@@ -21,9 +21,9 @@ std::string Student::getParentName()
 }
 
 int Student::getStudentCourse()
-	{
-		return studentCourse_;
-	}
+{
+	return studentCourse_;
+}
 
 int Student::getStudentAge()
 {

@@ -3,7 +3,7 @@
 
 int main()
 {
-	
+
 
 	StudentGroup* Networks = new StudentGroup("Networks", 1, 16, 3.5, 10);
 	StudentGroup* Microsoft = new StudentGroup("Microsft", 2, 0, 4, 5);
@@ -14,7 +14,7 @@ int main()
 
 	Student* zh = new Student(1, "Zhdan", "Khovansky", "Anatoliich", 1, 18, 3.5);
 	Student* za = new Student(2, "Zaur", "Pakhomovr", "Danilovich", 1, 17, 3.4);
-	Student* zi = new Student(3,"Zigmund", "Korovyak", "Evgenievich", 1, 16, 4.7);
+	Student* zi = new Student(3, "Zigmund", "Korovyak", "Evgenievich", 1, 16, 4.7);
 	Student* st = new Student(4, "Stanislav", "Karpov", "Danilovich", 1, 17, 4.5);
 	Student* de = new Student(5, "Denis", "Mikheev", "Sergeevich", 1, 18, 3.8);
 	Student* ol = new Student(6, "Oleg ", "Aksetov", "Antonovich", 1, 20, 3.9);
@@ -27,25 +27,25 @@ int main()
 	Student* iv = new Student(13, "Ivan", "Aksetov", "Artemovich", 3, 27, 4.8);
 
 	Networks->addStudent(zh);
-	Networks->addStudent(za); 
+	Networks->addStudent(za);
 	Networks->addStudent(zi);
 	Networks->addStudent(st);
 	Networks->addStudent(de);
 	Networks->addStudent(ol);
 	Networks->addStudent(sa);
 
-	
+
 	Networks->printGroup();
-	Networks->sortWithName(); 
+	Networks->sortWithName();
 	std::cout << "//Sorted by Second Name \n \n \n";
 	Networks->printGroup();
 	Networks->deleteStudent(zh);
-	std::cout << "//expelled student [id 1] \n \n\n"; 
+	std::cout << "//expelled student [id 1] \n \n\n";
 	Networks->printGroup();
-		
+
 
 	Microsoft->addStudent(go);
-	Microsoft->addStudent(ni); 
+	Microsoft->addStudent(ni);
 	Microsoft->addStudent(ko);
 	Microsoft->addStudent(an);
 	Microsoft->addStudent(de);
@@ -58,7 +58,7 @@ int main()
 	Microsoft->setMinAge(22);
 	Microsoft->checkGroups();
 
-	Microsoft->printGroup(); 
+	Microsoft->printGroup();
 
 	std::cout << "//MAX Gym members - 10 \n \n\n";
 	Gym->addStudent(zh);
@@ -71,7 +71,7 @@ int main()
 	Gym->addStudent(go);
 	Gym->addStudent(ni);
 	Gym->addStudent(ko);
-	Gym->addStudent(an);	
+	Gym->addStudent(an);
 	Gym->addStudent(ar);
 	Gym->addStudent(iv);
 
@@ -90,7 +90,7 @@ int main()
 	Gym->addStudent(go);
 	Gym->addStudent(ni);
 	Gym->addStudent(ko);
-	Gym->addStudent(an);	
+	Gym->addStudent(an);
 	Gym->addStudent(ar);
 	Gym->addStudent(iv);
 
@@ -98,9 +98,9 @@ int main()
 
 
 
+
 	delete zh, za, zi, st, de, ol, sa, go, ni, ko, an, ar, iv;
-	delete Networks, Microsoft;
+	delete Networks, Microsoft, Gym;
 
 	system("Pause");
 }
-

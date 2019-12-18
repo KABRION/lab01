@@ -4,13 +4,13 @@
 class StudentGroup
 {
 public:
-	
 
-	StudentGroup(std::string groupName,unsigned int groupID) 
+
+	StudentGroup(std::string groupName, unsigned int groupID)
 		: groupName_(groupName), groupID_(groupID) {}
 
 	StudentGroup(std::string groupName, unsigned int groupID, unsigned int minAge, double minRating, int studentsMax)
-		: groupName_(groupName), groupID_(groupID), minAge_(minAge), minRating_(minRating), studentsMax_(studentsMax){}
+		: groupName_(groupName), groupID_(groupID), minAge_(minAge), minRating_(minRating), studentsMax_(studentsMax) {}
 
 
 	const Student* getStudent(const std::string& _firstName, const std::string& _secondName);
@@ -28,7 +28,7 @@ public:
 	void setMinAge(const unsigned int& age);
 	void setMinRating(const double& rating);
 	void setStudentsMax(const double& rating);
-	
+
 	void sortWithName();
 	void sortWithRating();
 
